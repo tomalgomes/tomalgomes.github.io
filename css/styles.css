@@ -34,7 +34,7 @@
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: #1e30f3;
+  --bs-primary: #0f172a;
   --bs-secondary: #e21e80;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
@@ -61,8 +61,8 @@
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
-  --bs-body-color: #212529;
-  --bs-body-bg: #fff;
+  --bs-body-color: #e0e0e0;
+  --bs-body-bg: #121212;
   --bs-border-width: 1px;
   --bs-border-style: solid;
   --bs-border-color: #dee2e6;
@@ -102,6 +102,7 @@ body {
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  transition: all 0.3s ease;
 }
 
 hr {
@@ -11732,3 +11733,90 @@ html {
     left: -2vw;
   }
 }
+
+/* =========================
+   DARK MODE TECH VIBE OVERRIDE
+   ========================= */
+
+/* Navbar */
+.navbar {
+    background-color: #111 !important;
+}
+.navbar .nav-link {
+    color: #aaa !important;
+}
+.navbar .nav-link:hover {
+    color: #00ffe0 !important; /* neon accent */
+    text-shadow: 0 0 5px #00ffe0;
+}
+.navbar .navbar-brand {
+    color: #0ff !important;
+    text-shadow: 0 0 8px #0ff;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #00ffe0 !important;
+    border-color: #00ffe0 !important;
+    color: #000 !important;
+}
+.btn-primary:hover {
+    background-color: #00ccaa !important;
+    box-shadow: 0 0 10px #00ffe0;
+}
+.btn-outline-dark {
+    color: #00ffe0 !important;
+    border-color: #00ffe0 !important;
+}
+.btn-outline-dark:hover {
+    background-color: #00ffe0 !important;
+    color: #000 !important;
+    box-shadow: 0 0 10px #00ffe0;
+}
+
+/* Headers & badges */
+h1, h2, h3, h4, .badge {
+    color: #0ff !important;
+    text-shadow: 0 0 5px #0ff;
+}
+
+/* Links */
+a {
+    color: #0ff !important;
+}
+a:hover {
+    color: #00ffe0 !important;
+    text-shadow: 0 0 8px #00ffe0;
+}
+
+/* Cards / sections */
+.card, .section, .resume-section, .project-card {
+    background-color: #1a1a1a !important;
+    border-color: #00ffe0 !important;
+    box-shadow: 0 0 10px #00ffe033;
+}
+
+/* Inputs (contact form) */
+input, textarea {
+    background-color: #111 !important;
+    color: #e0e0e0 !important;
+    border: 1px solid #00ffe0;
+}
+input::placeholder, textarea::placeholder {
+    color: #555 !important;
+}
+
+/* Hover effects */
+.profile-img {
+    border: 2px solid #00ffe0;
+    transition: all 0.3s ease;
+}
+.profile-img:hover {
+    box-shadow: 0 0 20px #0ff;
+}
+
+/* subtle gradient background for sections */
+section {
+    background: linear-gradient(135deg, #0d0d0d 0%, #111 100%);
+}
+
