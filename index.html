@@ -33,7 +33,9 @@
       <!-- Navigation-->
       <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
         <div class="container px-5">
-          <a class="navbar-brand" href="#home"><span class="fw-bolder text-primary">TIG</span></a>
+          <a class="navbar-brand" href="#aboutme"
+            ><span class="fw-bolder text-primary">TIG</span></a
+          >
           <button
             class="navbar-toggler"
             type="button"
@@ -47,18 +49,20 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
-              <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="#aboutme">About Me</a></li>
               <li class="nav-item">
                 <a class="nav-link" href="#resume" target="_blank">Resume</a>
               </li>
+              <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
               <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+              <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
               <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
             </ul>
           </div>
         </div>
       </nav>
       <!-- Header-->
-      <header id="home" class="py-5">
+      <header id="aboutme" class="py-5">
         <div class="container px-5">
           <div class="row align-items-center">
             <!-- Profile Image -->
@@ -92,44 +96,107 @@
                   href="assets/Tomal-Isidore-Gomes-Resume.pdf"
                   download
                 >
-                  Download Resume
+                  <b>Download Resume</b>
                 </a>
 
-                <a class="btn btn-outline-light ms-1" href="#projects"> Projects </a>
+                <a class="btn btn-primary me-1" href="#projects"><b>Projects</b></a>
               </div>
             </div>
           </div>
         </div>
       </header>
 
-      <!-- About Section Extension-->
-      <section class="py-5 bg-light">
+      <!-- Approach -->
+      <section id="approach" class="py-5">
         <div class="container px-5">
           <div class="text-center mb-5">
             <h2 class="fw-bolder">How I Approach Quality</h2>
           </div>
           <div class="row gx-5">
-            <div class="col-lg-6">
-              <div class="bg-light p-4 rounded-4 h-100">
-                <ul>
-                  <li>Design test cases from user stories and business logic</li>
-                  <li>Perform risk-based and edge-case testing before happy paths</li>
-                  <li>Document reproducible bug reports with severity classification</li>
-                  <li>Apply Page Object Model in automation frameworks</li>
-                </ul>
+            <div class="col-md-6 mb-4">
+              <div class="card text-light h-100 shadow border-0">
+                <div class="card-body bg-dark rounded-4">
+                  <ul>
+                    <li>Design test cases from user stories and business logic</li>
+                    <li>Perform risk-based and edge-case testing before happy paths</li>
+                    <li>Document reproducible bug reports with severity classification</li>
+                    <li>Apply Page Object Model in automation frameworks</li>
+                  </ul>
+                </div>
               </div>
             </div>
-            <div class="col-lg-6">
-              <div class="bg-light p-4 rounded-4 h-100 d-flex align-items-center">
-                <p class="mb-0">
-                  I focus on preventing defects, not just detecting them. My goal is to ensure
-                  stability, usability, and data integrity across applications.
-                </p>
+
+            <div class="col-md-6 mb-4">
+              <div class="card text-light h-100 shadow border-0">
+                <div class="card-body bg-dark rounded-4 d-flex align-items-center">
+                  <p class="mb=0">
+                    I focus on preventing defects, not just detecting them. My goal is to ensure
+                    stability, usability, and data integrity across applications.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      <!-- Skills -->
+      <section id="skills" class="py-5 bg-dark text-light">
+        <div class="container px-5">
+          <div class="text-center mb-5">
+            <h2 class="fw-bolder">Skills</h2>
+          </div>
+
+          <div class="row gx-5">
+            <div class="col-md-4 mb-4">
+              <div class="card bg-secondary text-light h-100 shadow border-0 rounded-4">
+                <div class="card-body">
+                  <h5 class="card-title mb-4 text-center">Testing & QA</h5>
+                  <ul>
+                    <li>Manual Testing</li>
+                    <li>API Testing</li>
+                    <li>UI Testing</li>
+                    <li>Test Case Design</li>
+                    <li>Bug Reporting</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+              <div class="card bg-secondary text-light h-100 shadow border-0 rounded-4">
+                <div class="card-body">
+                  <h5 class="card-title mb-4 text-center">Automation</h5>
+                  <ul>
+                    <li>Playwright</li>
+                    <li>JavaScript</li>
+                    <li>Selenium</li>
+                    <li>Page Object Model</li>
+                    <li>Allure</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+              <div class="card bg-secondary text-light h-100 shadow border-0 rounded-4">
+                <div class="card-body">
+                  <h5 class="card-title mb-4 text-center">Tools</h5>
+                  <ul>
+                    <li>VS Code</li>
+                    <li>Postman</li>
+                    <li>Chrome DevTools</li>
+                    <li>Jira</li>
+                    <li>Git & GitHub</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Stats -->
       <section class="py-5">
         <div class="container px-5 text-center">
           <div class="row gx-5">
@@ -148,6 +215,8 @@
           </div>
         </div>
       </section>
+
+      <!-- Projects -->
       <section id="projects" class="py-5 bg-dark text-light">
         <div class="container px-5">
           <div class="text-center mb-5">
@@ -160,8 +229,8 @@
                 <div class="card-body">
                   <h5 class="card-title mb-3">UI Automation Framework with Playwright & POM</h5>
                   <p class="card-text">
-                    End-to-end UI automation framework for an e-commerce site using Playwright and
-                    Page Object Model. Covers core user flows, error handling, and generates
+                    End-to-end UI automation framework for an e-commerce platform using Playwright
+                    and Page Object Model. Covers core user flows, error handling, and generates
                     detailed Allure reports for test execution.
                   </p>
                   <p class="small mb-2">
@@ -182,9 +251,9 @@
                 <div class="card-body">
                   <h5 class="card-title mb-3">E-Commerce Platform QA: Manual & API Testing</h5>
                   <p class="card-text">
-                    Manual and API testing for an e-commerce web application with detailed test
-                    documentation, defect reports, and comparative analysis to improve system
-                    reliability
+                    QA testing of an e-commerce web application covering UI functional flows and API
+                    endpoint validation. Includes detailed test documentation, defect reports, and
+                    comparative analysis to improve system reliability.
                   </p>
                   <p class="small mb-2">
                     <strong>Tools:</strong> Postman, Chrome DevTools, Google Docs/Sheets
@@ -192,7 +261,7 @@
                   <a
                     href="https://github.com/tomalgomes/manual-testing-demo-evershop.git"
                     target="_blank"
-                    class="btn btn-outline-light btn-sm"
+                    class="btn btn-sm"
                     >View on GitHub</a
                   >
                 </div>
@@ -204,7 +273,27 @@
         </div>
       </section>
 
-      <section id="contact" class="py-5 bg-secondary text-light">
+      <!-- Education -->
+      <section id="education" class="py-5 text-light">
+        <div class="container px-5">
+          <div class="text-center mb-5">
+            <h2 class="fw-bolder">Education</h2>
+          </div>
+
+          <div class="text-center">
+            <h5>Bangladesh University of Business and Technology (BUBT)</h5>
+            <p>B.Sc. in Computer Science & Engineering</p>
+            <p>2022 – 2026 | CGPA: 3.94</p>
+            <p>
+              Relevant Coursework: Software Testing & Quality Assurance, Software Engineering,
+              Databases, Operating Systems, Project Management
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="py-5 bg-dark text-light">
         <div class="container px-5">
           <div class="text-center mb-5">
             <h2 class="text-gradient fw-bolder">Contact</h2>
@@ -235,11 +324,9 @@
       </section>
     </main>
     <!-- Footer-->
-    <footer class="py-3 ">
+    <footer class="py-3">
       <div class="container text-center">
-        <!-- <div class="container px-5"> -->
         <div class="small">
-          <!-- <div class="row align-items-center justify-content-between flex-column flex-sm-row"> -->
           <div class="col-auto">
             <div class="small m-0">
               Copyright &copy; 2026 Tomal Isidore Gomes. All rights reserved.
