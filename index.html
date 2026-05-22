@@ -10,27 +10,23 @@
     <meta name="google-site-verification" content="PcskDuUqt5-eu70VV0nplBWNt1SV0OC1RCAf8nYW8fw" />
     <meta name="author" content="Tomal Isidore Gomes" />
     <title>Tomal Isidore Gomes | SQA Engineer</title>
-    <!-- Logo-->
     <link rel="icon" type="image/x-icon" href="assets/Logo.ico" />
-    <!-- Custom Google font-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
       rel="stylesheet"
     />
-    <!-- Bootstrap icons-->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
       rel="stylesheet"
     />
-    <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
   </head>
 
   <body class="d-flex flex-column h-100 bg-dark text-light">
     <main class="flex-shrink-0">
-      <!-- Navigation-->
+      <!-- Navigation -->
       <nav class="navbar navbar-expand-lg navbar-light bg-white py-3">
         <div class="container px-5">
           <a class="navbar-brand" href="#aboutme"
@@ -51,7 +47,13 @@
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
               <li class="nav-item"><a class="nav-link" href="#aboutme">About Me</a></li>
               <li class="nav-item">
-                <a class="nav-link" href="#resume" target="_blank">Resume</a>
+                <a
+                  class="nav-link"
+                  href="assets/Tomal-Isidore-Gomes-Resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Resume</a
+                >
               </li>
               <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
               <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
@@ -61,37 +63,36 @@
           </div>
         </div>
       </nav>
-      <!-- Header-->
+
+      <!-- Header / About Me -->
       <header id="aboutme" class="py-5">
         <div class="container px-5">
           <div class="row align-items-center">
-            <!-- Profile Image -->
-            <div class="col-md-4 text-center mb-4 mb-md-0">
+            <!-- Profile image fades in -->
+            <div class="col-md-4 text-center mb-4 mb-md-0 fade-up">
               <img
                 src="assets/profile.png"
                 alt="Tomal Isidore Gomes"
                 class="img-fluid rounded-circle profile-small mb-1"
               />
-
               <h4 class="fw-bold mb-1">Tomal Isidore Gomes</h4>
               <p class="text-muted">Software Quality Assurance Engineer</p>
+              <p class="text-muted small">Dhaka, Bangladesh</p>
             </div>
 
-            <!-- About Text -->
-            <div class="col-md-8">
+            <!-- About text fades in slightly after -->
+            <div class="col-md-8 fade-up" style="transition-delay: 0.15s">
               <h1 class="fw-bolder mb-3">About Me</h1>
-
               <p class="lead">
                 I prioritise defect prevention and user satisfaction to ensure maximum quality and
-                usability in sofware products. My areas of expertise in manual testing include, but
+                usability in software products. My areas of expertise in manual testing include, but
                 are not limited to, producing test plans, test cases, defect reports, and developing
-                automation frameworks. I use Playwright and Selenium to build automation frameworks
-                from scratch, and Allure to generate structured test reports.
+                automation frameworks. I primarily use Playwright to build automation frameworks,
+                and Allure to generate structured test reports.
               </p>
-
-              <div class="mt-4 d-flex gap-3">
+              <p class="text-muted small mb-4">Open to entry-level SQA roles in Dhaka.</p>
+              <div class="mt-2 d-flex gap-3">
                 <a
-                  id="resume"
                   class="btn btn-primary me-1"
                   href="assets/Tomal-Isidore-Gomes-Resume.pdf"
                   target="_blank"
@@ -99,7 +100,6 @@
                 >
                   <b>View Resume</b>
                 </a>
-
                 <a class="btn btn-primary me-1" href="#projects"><b>Projects</b></a>
               </div>
             </div>
@@ -110,11 +110,11 @@
       <!-- Approach -->
       <section id="approach" class="py-5">
         <div class="container px-5">
-          <div class="text-center mb-5">
+          <div class="text-center mb-5 fade-up">
             <h2 class="fw-bolder">How I Approach Quality</h2>
           </div>
           <div class="row gx-5">
-            <div class="col-md-6 mb-4">
+            <div class="col-md-6 mb-4 fade-up" style="transition-delay: 0.1s">
               <div class="card text-light h-100 shadow border-0">
                 <div class="card-body bg-dark rounded-4">
                   <ul>
@@ -127,10 +127,10 @@
               </div>
             </div>
 
-            <div class="col-md-6 mb-4">
+            <div class="col-md-6 mb-4 fade-up" style="transition-delay: 0.25s">
               <div class="card text-light h-100 shadow border-0">
                 <div class="card-body bg-dark rounded-4 d-flex align-items-center">
-                  <p class="mb=0">
+                  <p class="mb-0">
                     Instead of just detecting system defects, I focus on preventing them to ensure
                     stability and data integrity across the entire application.
                   </p>
@@ -144,12 +144,12 @@
       <!-- Skills -->
       <section id="skills" class="py-5 bg-dark text-light">
         <div class="container px-5">
-          <div class="text-center mb-5">
+          <div class="text-center mb-5 fade-up">
             <h2 class="fw-bolder">Skills</h2>
           </div>
 
           <div class="row gx-5">
-            <div class="col-md-4 mb-4">
+            <div class="col-md-4 mb-4 fade-up" style="transition-delay: 0s">
               <div class="card bg-secondary text-light h-100 shadow border-0 rounded-4">
                 <div class="card-body">
                   <h5 class="card-title mb-4 text-center">Testing & QA</h5>
@@ -164,14 +164,13 @@
               </div>
             </div>
 
-            <div class="col-md-4 mb-4">
+            <div class="col-md-4 mb-4 fade-up" style="transition-delay: 0.15s">
               <div class="card bg-secondary text-light h-100 shadow border-0 rounded-4">
                 <div class="card-body">
                   <h5 class="card-title mb-4 text-center">Automation</h5>
                   <ul>
                     <li>Playwright</li>
                     <li>JavaScript</li>
-                    <li>Selenium</li>
                     <li>Page Object Model</li>
                     <li>Allure</li>
                   </ul>
@@ -179,16 +178,17 @@
               </div>
             </div>
 
-            <div class="col-md-4 mb-4">
+            <div class="col-md-4 mb-4 fade-up" style="transition-delay: 0.3s">
               <div class="card bg-secondary text-light h-100 shadow border-0 rounded-4">
                 <div class="card-body">
                   <h5 class="card-title mb-4 text-center">Tools</h5>
                   <ul>
-                    <li>VS Code</li>
                     <li>Postman</li>
                     <li>Chrome DevTools</li>
                     <li>Jira</li>
                     <li>Git & GitHub</li>
+                    <li>MySQL</li>
+                    <li>VS Code</li>
                   </ul>
                 </div>
               </div>
@@ -201,17 +201,21 @@
       <section class="py-5">
         <div class="container px-5 text-center">
           <div class="row gx-5">
-            <div class="col-md-4">
-              <h3 class="fw-bolder">24+</h3>
+            <div class="col-md-3 fade-up" style="transition-delay: 0s">
+              <h3 class="fw-bolder">100+</h3>
               <p>Test Cases Designed</p>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-3 fade-up" style="transition-delay: 0.1s">
               <h3 class="fw-bolder">18</h3>
               <p>Defects Identified & Documented</p>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-3 fade-up" style="transition-delay: 0.2s">
               <h3 class="fw-bolder">2</h3>
               <p>Testing Projects Completed</p>
+            </div>
+            <div class="col-md-3 fade-up" style="transition-delay: 0.3s">
+              <h3 class="fw-bolder">1</h3>
+              <p>Projects In Progress</p>
             </div>
           </div>
         </div>
@@ -220,12 +224,11 @@
       <!-- Projects -->
       <section id="projects" class="py-5 bg-dark text-light">
         <div class="container px-5">
-          <div class="text-center mb-5">
-            <h2 class="text-gradient fw-bolder">Projects</h2>
+          <div class="text-center mb-5 fade-up">
+            <h2 class="fw-bolder">Projects</h2>
           </div>
           <div class="row gx-5">
-            <!-- Project Card -->
-            <div class="col-md-6 mb-4">
+            <div class="col-md-6 mb-4 fade-up" style="transition-delay: 0.1s">
               <div class="card bg-secondary text-light h-100 shadow border-0 rounded-4">
                 <div class="card-body">
                   <h5 class="card-title mb-3">UI Automation Framework with Playwright & POM</h5>
@@ -247,7 +250,7 @@
               </div>
             </div>
 
-            <div class="col-md-6 mb-4">
+            <div class="col-md-6 mb-4 fade-up" style="transition-delay: 0.25s">
               <div class="card bg-secondary text-light h-100 shadow border-0 rounded-4">
                 <div class="card-body">
                   <h5 class="card-title mb-3">E-Commerce Platform QA: Manual & API Testing</h5>
@@ -263,14 +266,12 @@
                   <a
                     href="https://github.com/tomalgomes/manual-testing-demo-evershop.git"
                     target="_blank"
-                    class="btn btn-sm"
+                    class="btn btn-outline-light btn-sm"
                     >View on GitHub</a
                   >
                 </div>
               </div>
             </div>
-
-            <!-- Add more -->
           </div>
         </div>
       </section>
@@ -278,11 +279,11 @@
       <!-- Education -->
       <section id="education" class="py-5 text-light">
         <div class="container px-5">
-          <div class="text-center mb-5">
+          <div class="text-center mb-5 fade-up">
             <h2 class="fw-bolder">Education</h2>
           </div>
 
-          <div class="text-center">
+          <div class="text-center fade-up" style="transition-delay: 0.15s">
             <h5>Bangladesh University of Business and Technology (BUBT)</h5>
             <p>B.Sc. in Computer Science & Engineering</p>
             <p>2022 – 2026 | CGPA: 3.94</p>
@@ -297,14 +298,18 @@
       <!-- Contact -->
       <section id="contact" class="py-5 bg-dark text-light">
         <div class="container px-5">
-          <div class="text-center mb-5">
-            <h2 class="text-gradient fw-bolder">Contact</h2>
+          <div class="text-center mb-5 fade-up">
+            <h2 class="fw-bolder">Contact</h2>
           </div>
-          <div class="d-flex flex-column align-items-center">
+          <div
+            class="d-flex flex-column align-items-center fade-up"
+            style="transition-delay: 0.15s"
+          >
             <p class="mb-2">
               Email:
               <a href="mailto:isidore.tomal@gmail.com" class="text-info">isidore.tomal@gmail.com</a>
             </p>
+            <p class="text-muted small mb-3">Mirpur, Dhaka, Bangladesh</p>
             <div>
               <a
                 href="https://www.linkedin.com/in/tomal-gomes/"
@@ -325,7 +330,8 @@
         </div>
       </section>
     </main>
-    <!-- Footer-->
+
+    <!-- Footer -->
     <footer class="py-3">
       <div class="container text-center">
         <div class="small">
@@ -337,9 +343,8 @@
         </div>
       </div>
     </footer>
-    <!-- Bootstrap core JS-->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
   </body>
 </html>
