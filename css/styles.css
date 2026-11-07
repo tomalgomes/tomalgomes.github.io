@@ -12000,26 +12000,26 @@ html {
 }
 
 .navbar .navbar-brand {
-  color: #0ff !important;
-  text-shadow: 0 0 8px #0ff;
+  color: #2dd4bf !important;
+  text-shadow: none;
 }
 
 /* Buttons */
 .btn-primary {
-  background-color: #1e68f3 !important;
-  border-color: #1e68f3 !important;
+  background-color: #2dd4bf !important;
+  border-color: #2dd4bf !important;
   color: #000 !important;
 }
 .btn-primary:hover {
   background-color: #000 !important;
-  color: #1e68f3 !important;
+  color: #2dd4bf !important;
 }
 .btn-outline-dark {
-  color: #1e68f3 !important;
-  border-color: #1e68f3 !important;
+  color: #2dd4bf !important;
+  border-color: #2dd4bf !important;
 }
 .btn-outline-dark:hover {
-  background-color: #1e68f3 !important;
+  background-color: #2dd4bf !important;
   color: #000 !important;
 }
 
@@ -12039,11 +12039,11 @@ h4,
 
 /* Links */
 a {
-  color: #0ff !important;
+  color: #2dd4bf !important;
 }
 a:hover {
-  color: #00ffe0 !important;
-  text-shadow: 0 0 8px #00ffe0;
+  color: #5eead4 !important;
+  text-shadow: none;
 }
 
 /* Cards / sections */
@@ -12052,8 +12052,8 @@ a:hover {
 .resume-section,
 .project-card {
   background-color: #1a1a1a !important;
-  border-color: #00ffe0 !important;
-  box-shadow: 0 0 10px #00ffe033;
+  border-color: #2a4b48 !important;
+  box-shadow: none;
 }
 
 /* Inputs (contact form) */
@@ -12061,7 +12061,7 @@ input,
 textarea {
   background-color: #111 !important;
   color: #e0e0e0 !important;
-  border: 1px solid #00ffe0;
+  border: 1px solid #2dd4bf;
 }
 input::placeholder,
 textarea::placeholder {
@@ -12070,11 +12070,11 @@ textarea::placeholder {
 
 /* Hover effects */
 .profile-small {
-  border: 2px solid #00ffe0;
+  border: 2px solid #2dd4bf;
   transition: all 0.3s ease;
 }
 .profile-small:hover {
-  box-shadow: 0 0 20px #0ff;
+  box-shadow: 0 0 10px #2dd4bf66;
 }
 
 /* subtle gradient background for sections */
@@ -12085,7 +12085,7 @@ section {
 
 .text-primary,
 .text-gradient {
-  color: #4da3ff !important;
+  color: #2dd4bf !important;
   background: none !important;
 }
 
